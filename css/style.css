@@ -1,0 +1,169 @@
+/*
+Name: Danny Poarch
+File style.css
+Date: 9/25/2025
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #151515;
+    color: #fff;
+}
+
+.body {
+    padding: 5%;
+    font-size: 100%;
+}
+
+.body a {
+    font-size: 100%;
+}
+
+.footer {
+    padding: 5%;
+}
+
+nav {
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(31, 35, 41);
+    padding-bottom: 2%;
+    padding-bottom: 2%;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    color: #1e9be9;
+    font-size: 125%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-decoration: none;
+    text-shadow: 0 0 2% #1e9be9;
+    font-weight: bold;
+}
+
+a {
+    color: #1e9be9;
+    font-size: 125%;
+    text-decoration: none;
+    text-shadow: 0 0 2% #1e9be9;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #fff;
+    text-shadow: 0 0 2% #fff;
+}
+
+nav li {
+    display: inline;
+}
+
+nav h1 {
+    padding-bottom: 2%;
+    text-align: center;
+    display: inline;
+    text-shadow: 0 0 2% #fff;
+}
+
+.contact ul {
+    list-style-type: none;
+    padding-left: 5%;
+}
+
+.projectContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem; /* space between cards */
+    padding: 2%;
+    justify-items: center; /* keeps cards centered in their grid cells */
+}
+
+.project img {
+    border: solid 0.5% #1e9be9;
+    box-shadow: 0 0 2% #1e9be9;
+    border-radius: 12px;
+}
+
+.smallimg {
+    width: 50%;
+    height: 50%;
+}
+
+.mobile nav ul li a {
+    display: block;
+}
+
+.mobile li {
+    display: block;
+    margin: 0;
+    padding: 0.6%;
+}
+
+
+/* Mobile and smaller */
+@media screen and (min-width: 0px), print {
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .project {
+        min-width: 100%;
+    }
+
+    .nav ul li a {
+        font-size: 200%;
+    }
+}
+
+/* Tablet and small desktop */
+@media screen and (min-width: 1000px), print {
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    .project {
+        min-width: 50%;
+    }
+
+    .nav ul li a {
+        font-size: 200%;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1500px), print {
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    .project {
+        min-width: 50%;
+    }
+    
+    .nav ul li a {
+        font-size: 200%;
+    }
+}
+
